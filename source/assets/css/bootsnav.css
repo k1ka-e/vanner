@@ -1560,7 +1560,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.nav > li > a.active {
-    color: #E76D5D;
+    color: #18335a;
   }
 
   .eastern-blue nav.navbar.bootsnav ul.nav > li > a.active {
@@ -1662,7 +1662,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.nav > li > a:hover {
-    color: #E76D5D;
+    color: #aa3a26;
   }
 
   .eastern-blue nav.navbar.bootsnav ul.nav > li > a:hover {
@@ -3067,7 +3067,7 @@ ul.cart-list > li.total > .btn {
     font-size: 25px;
     position: relative;
     float: left;
-    color: #e76d5d;
+    color: #18335a;
     top: 3px;
   }
 

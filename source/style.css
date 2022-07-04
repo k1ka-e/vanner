@@ -87,7 +87,8 @@ body {
 }
 
 :root {
-  --primary: #e76d5d;
+  --primary: #a72817;
+  --primary2: #18335a;
 }
 
 html, body, .wrapper {
@@ -138,6 +139,10 @@ p {
   margin: 0 0 15px;
   text-transform: none;
   font-weight: 400;
+}
+
+.header--text {
+  color: #fff;
 }
 
 hr {
@@ -398,7 +403,7 @@ input {
 }
 
 .bg-theme {
-  background-color: var(--primary);
+  background-color: var(--primary2);
 }
 
 .bg-light-gradient {
@@ -736,7 +741,7 @@ input {
 }
 
 .bg-dark {
-  background: #b43822 !important;
+  background: var(--primary2) !important;
 }
 
 .bg-dark-hard {
@@ -751,7 +756,7 @@ input {
 .btn-theme {
   background-color: var(--primary);
   color: #ffffff !important;
-  border: 2px solid rgb(201, 81, 33);
+  border: 2px solid var(--primary);
 }
 
 .btn-theme.border {
@@ -2445,7 +2450,7 @@ body,
      # Video Button Play
 =================================================================== */
 .video-play-button {
-  color: var(--primary);
+  color: var(--primary2);
   font-size: 30px;
   left: 50%;
   padding-left: 7px;
@@ -2480,12 +2485,12 @@ body,
 
 .video-play-button.theme:before,
 .video-play-button.theme:after {
-  background: #e03e0c repeat scroll 0 0;
+  background: #1b47a7 repeat scroll 0 0;
 }
 
 .orange .video-play-button.theme:before,
 .orange .video-play-button.theme:after {
-  background: #FF5621 repeat scroll 0 0;
+  background: #1b47a7 repeat scroll 0 0;
 }
 
 .video-play-button:after {
@@ -2542,7 +2547,7 @@ body,
   display: block;
   position: relative;
   z-index: 3;
-  color: #df3213;
+  color: #2948af;
 }
 
 .video-play-button.theme i {
@@ -3402,7 +3407,7 @@ body,
   display: inline-block;
   font-size: 50px;
   margin-bottom: 25px;
-  color: #ec4e33;
+  color: var(--primary2);
   position: relative;
   z-index: 1;
 }
@@ -3435,7 +3440,7 @@ body,
 .features-area .item-grid:first-child .item:first-child,
 .features-area .item-grid:last-child .item:last-child,
 .features-area .item-grid .item:hover {
-  background: linear-gradient(90deg, rgb(236, 107, 75) 0%, rgb(240, 66, 23) 100%);
+  background: linear-gradient(90deg, rgb(21, 47, 104) 0%, rgb(72, 86, 148) 100%);
 }
 
 .features-area .item-grid:first-child .item:first-child i, 
