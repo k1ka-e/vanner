@@ -86,6 +86,10 @@ body {
   color: #666666;
 }
 
+:root {
+  --primary: #e76d5d;
+}
+
 html, body, .wrapper {
   height: 100%;
 }
@@ -318,6 +322,23 @@ input {
   }
 }
 
+/* !!!scroll bar
+================ */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  box-shadow: 0 0 2px rgb(0, 0, 0, 2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c94242;
+  border-radius: 8px;
+  border: 3px solid #fffefe;
+}
+
 .fixed-bg {
   position: absolute;
   left: 0;
@@ -361,7 +382,7 @@ input {
 }
 
 .bg-gray {
-  background-color: #f3f7fd;
+  background-color: #b9b9b9;
 }
 
 .bg-gray-hard {
@@ -377,7 +398,7 @@ input {
 }
 
 .bg-theme {
-  background-color: #086AD8;
+  background-color: var(--primary);
 }
 
 .bg-light-gradient {
@@ -715,7 +736,7 @@ input {
 }
 
 .bg-dark {
-  background: #001d4c !important;
+  background: #b43822 !important;
 }
 
 .bg-dark-hard {
@@ -728,9 +749,9 @@ input {
 }
 
 .btn-theme {
-  background-color: #086AD8;
+  background-color: var(--primary);
   color: #ffffff !important;
-  border: 2px solid #086AD8;
+  border: 2px solid rgb(201, 81, 33);
 }
 
 .btn-theme.border {
@@ -744,16 +765,16 @@ input {
 }
 
 .btn-theme.border:hover {
-  background-color: #086AD8;
+  background-color: var(--primary);
   color: #ffffff !important;
-  border: 2px solid #086AD8;
+  border: 2px solid var(--primary);
 }
 
 .btn-theme.effect:hover, 
  .btn-theme.effect:focus {
-  background: #086AD8 none repeat scroll 0 0;
-  border: 2px solid #086AD8;
-  color: #ffffff;
+  background: transparent none repeat scroll 0 0;
+  color: var(--primary) !important;
+  border: 2px solid var(--primary);
 }
 
 .btn.btn-sm-lm {
@@ -874,6 +895,12 @@ button, button:focus {
 
 header {
   position: relative;
+}
+
+.header {
+  background: url('https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1718&q=80')
+  no-repeat center;
+  background-size: 100%;
 }
 
 header nav.navbar.border.bootsnav.navbar-fixed.no-background {
@@ -997,7 +1024,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 }
 
 .site-heading h4 {
-  color: #086AD8;
+  color: var(--primary);
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1007,11 +1034,11 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 }
 
 .site-heading.clean h2 span {
-  color: #086AD8;
+  color: var(--primary);
 }
 
 .site-heading h2 span {
-  color: #086AD8;
+  color: var(--primary);
 }
 
 .site-heading.barber h2 span {
@@ -1025,7 +1052,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 }
 
 .site-heading h2::before {
-  background: #086AD8 none repeat scroll 0 0;
+  background: var(--primary) none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -1036,7 +1063,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 }
 
 .site-heading h2::after {
-  background: #086AD8 none repeat scroll 0 0;
+  background: var(--primary) none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -1970,7 +1997,7 @@ body,
 
 .banner-area.text-color .content h2 strong {
   font-weight: 800;
-  color: #086AD8;
+  color: var(--primary);
 }
 
 .banner-area.text-light .content h2 strong {
@@ -2418,7 +2445,7 @@ body,
      # Video Button Play
 =================================================================== */
 .video-play-button {
-  color: #086AD8;
+  color: var(--primary);
   font-size: 30px;
   left: 50%;
   padding-left: 7px;
@@ -2453,7 +2480,7 @@ body,
 
 .video-play-button.theme:before,
 .video-play-button.theme:after {
-  background: #086AD8 repeat scroll 0 0;
+  background: #e03e0c repeat scroll 0 0;
 }
 
 .orange .video-play-button.theme:before,
@@ -2515,7 +2542,7 @@ body,
   display: block;
   position: relative;
   z-index: 3;
-  color: #086AD8;
+  color: #df3213;
 }
 
 .video-play-button.theme i {
@@ -3375,7 +3402,7 @@ body,
   display: inline-block;
   font-size: 50px;
   margin-bottom: 25px;
-  color: #086AD8;
+  color: #ec4e33;
   position: relative;
   z-index: 1;
 }
@@ -3408,7 +3435,7 @@ body,
 .features-area .item-grid:first-child .item:first-child,
 .features-area .item-grid:last-child .item:last-child,
 .features-area .item-grid .item:hover {
-  background: linear-gradient(90deg, rgba(8,106,216,1) 0%, rgba(10,60,116,1) 100%);
+  background: linear-gradient(90deg, rgb(236, 107, 75) 0%, rgb(240, 66, 23) 100%);
 }
 
 .features-area .item-grid:first-child .item:first-child i, 
@@ -3993,7 +4020,7 @@ body,
   height: 2px;
   position: absolute;
   transition: all 0.2s linear;
-  background: #086AD8;
+  background: var(--primary);
 }
 
 .work-process-area .work-pro-items .item .item-inner::before, 
@@ -4003,7 +4030,7 @@ body,
   height: 0;
   position: absolute;
   transition: all 0.2s linear;
-  background: #086AD8;
+  background: var(--primary);
 }
 
 .work-process-area .work-pro-items .item:hover::before, 
@@ -4153,7 +4180,7 @@ body,
   position: relative;
   z-index: 1;
   padding-left: 45px;
-  color: #086AD8;
+  color: var(--primary);
 }
 
 .works-about-items .info > h5::after {
@@ -4163,7 +4190,7 @@ body,
   content: "";
   height: 2px;
   width: 30px;
-  background: #086AD8;
+  background: var(--primary);
   margin-top: -1px;
 }
 
@@ -4189,7 +4216,7 @@ body,
   width: 100%;
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
-  color: #086AD8;
+  color: var(--primary);
 }
 
 .works-about-items ul li h5 {
@@ -5567,7 +5594,7 @@ body,
   color: #0e2b3d;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(90deg, rgba(65,84,241,1) 0%, rgba(14,32,173,1) 75%);
+  background: linear-gradient(90deg, rgb(241, 71, 65) 0%, rgb(194, 53, 53) 75%);
   -webkit-background-clip: text;
 }
 
@@ -7433,7 +7460,7 @@ footer .f-item.about {
 }
 
 footer.bg-dark .f-item.about {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 footer.bg-dark .f-item.about {
@@ -7460,7 +7487,7 @@ footer form button {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: #086AD8;
+  background: var(--primary);
   color: #ffffff;
 }
 
@@ -7627,6 +7654,6 @@ footer.bg-dark .footer-bottom a {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background: url(assets/img/preloader.gif) center no-repeat #ffffff;
+  background: url(assets/img/1493.gif) center no-repeat #ffffff;
   text-align: center;
 }
