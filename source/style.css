@@ -7443,11 +7443,11 @@ footer .fixed-shape {
 }
 
 footer .fixed-shape img {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 footer.bg-dark .fixed-shape img {
-  opacity: 0.1;
+  opacity: 0.4;
 }
 
 footer img, 
@@ -7523,15 +7523,15 @@ footer .f-item.link li:last-child {
 }
 
 footer.bg-dark .f-item.link li a {
-  color: #c2d1e2;
+  color: #fff;
 }
 
 footer.bg-dark .f-item.link li a:hover {
-  color: #ffffff;
+  color: var(--primary);
 }
 
 footer.bg-dark p {
-  color: #c2d1e2;
+  color: #fff;
 }
 
 footer .f-item .address li strong {
