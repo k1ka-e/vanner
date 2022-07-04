@@ -7465,7 +7465,7 @@ footer .f-item.about {
 }
 
 footer.bg-dark .f-item.about {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 footer.bg-dark .f-item.about {
@@ -7492,7 +7492,7 @@ footer form button {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: var(--primary);
+  background: #0077B5;
   color: #ffffff;
 }
 
