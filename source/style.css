@@ -903,7 +903,7 @@ header {
 }
 
 .header {
-  background: url('https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1718&q=80')
+  background: url('/source/assets/img/background/main.jpeg')
   no-repeat center;
   background-size: 100%;
 }
@@ -1447,6 +1447,28 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.pod_navbar {
+  background: #ffffff;
+}
+
+.pod_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pod_text {
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 600;
+  color:rgb(194, 53, 53);
+}
+
+.pod_text2 {
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 600;
+  color:rgb(53, 194, 84);
+}
 
 /* ============================================================== 
      # Bradcrumb 
@@ -4355,6 +4377,10 @@ body,
     text-transform: capitalize;
 }
 
+.owl-carousel {
+  margin-bottom: 4rem;
+}
+
 .services-area .services-items.services-carousel .owl-stage-outer {
     padding-bottom: 30px;
 }
@@ -7225,13 +7251,19 @@ ul.pagination {
 }
 
 .contact-area form button {
-  background: #086AD8;
-  border: none;
+  background: var(--primary);
+  border-radius: 1px solid var(--primary);
   display: inline-block;
   color: #ffffff;
   font-weight: 600;
   padding: 15px 40px;
   border-radius: 5px;
+}
+
+.contact-area form button:hover {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
 }
 
 .contact-area form .col-lg-6 {
@@ -7279,12 +7311,12 @@ ul.pagination {
   content: "";
   height: 3px;
   width: 100%;
-  background: #086AD8;
+  background: var(--primary);
 }
 
 .contact-area .contact-tabs > ul li a.active {
   background: transparent;
-  color: #086AD8;
+  color: var(--primary);
 }
 
 .contact-tabs .tab-content ul li {
@@ -7302,7 +7334,7 @@ ul.pagination {
   line-height: 80px;
   background: #ffffff;
   border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
-  color: #086AD8;
+  color: var(--primary);
   margin-right: 20px;
   box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
 }
