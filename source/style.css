@@ -3489,6 +3489,15 @@ body,
   color: var(--primary2);
 }
 
+.gallary__title {
+  justify-content: center;
+  text-align: center;
+  color: var(--primary);
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+}
+
 .features-area .item h5 {
   font-weight: 600;
 }

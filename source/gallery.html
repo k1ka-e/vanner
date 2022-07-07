@@ -20,6 +20,14 @@
       type="image/x-icon"
     />
 
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    
+
     <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/0ca3153d0b.js"
@@ -154,16 +162,16 @@
                 <a href="/index.html">Home</a>
               </li>
               <li>
-                <a href="./source/about-us.html">About</a>
+                <a href="/about-us.html">About</a>
               </li>
               <li>
-                <a href="./source/services.html">Services</a>
+                <a href="/services.html">Services</a>
               </li>
               <li>
-                <a href="./source/services.html">Gallery</a>
+                <a href="/services.html">Gallery</a>
               </li>
               <li>
-                <a href="./source/contact.html">Contact</a>
+                <a href="/contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -171,22 +179,47 @@
           <div class="pod_navbar">
             <div class="container">
               <div class="pod_content">
-                <div class="pod_text">WE DO NOT TOW CARS OR PICKUP TRUCKS
+                <div class="pod_text">
+                  WE DO NOT TOW CARS OR PICKUP TRUCKS
                   <div class="pod__images">
-                    <img class="images1" src="/source/assets/img/icon/no.png" alt="">
-                    <img class="images_car" src="/source/assets/img/icon/car1.png" alt="">
+                    <img
+                      class="images1"
+                      src="/source/assets/img/icon/no.png"
+                      alt=""
+                    />
+                    <img
+                      class="images_car"
+                      src="/source/assets/img/icon/car1.png"
+                      alt=""
+                    />
                   </div>
                   <div class="pod__images">
-                    <img class="images1" src="/source/assets/img/icon/no.png" alt="">
-                    <img class="images_car" src="/source/assets/img/icon/car2.png" alt="">
+                    <img
+                      class="images1"
+                      src="/source/assets/img/icon/no.png"
+                      alt=""
+                    />
+                    <img
+                      class="images_car"
+                      src="/source/assets/img/icon/car2.png"
+                      alt=""
+                    />
                   </div>
                 </div>
-                
-    
-                <div class="pod_text2">SEMI TRUCKS AND TRAILERS ONLY
+
+                <div class="pod_text2">
+                  SEMI TRUCKS AND TRAILERS ONLY
                   <div class="pod__images">
-                    <img class="images1" src="/source/assets/img/icon/1634264.png" alt="">
-                    <img class="images_car" src="/source/assets/img/icon/car3.png" alt="">
+                    <img
+                      class="images1"
+                      src="/source/assets/img/icon/1634264.png"
+                      alt=""
+                    />
+                    <img
+                      class="images_car"
+                      src="/source/assets/img/icon/car3.png"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -195,8 +228,6 @@
         </div>
       </nav>
       <!-- End Navigation -->
-
-      
     </header>
     <!-- End Header -->
 
@@ -204,7 +235,7 @@
     ============================================= -->
     <div
       class="breadcrumb-area shadow dark bg-fixed text-light"
-      style="background-image: url(/source/assets/img/background/services.jpeg)"
+      style="background-image: url(/source/assets/img/background/gallery.jpeg)"
     >
       <div class="container">
         <div class="row align-center">
@@ -216,7 +247,7 @@
               <li>
                 <a href="/index.html"><i class="fas fa-home"></i> Home</a>
               </li>
-              <li class="active">Services</li>
+              <li class="active">Gallery</li>
             </ul>
           </div>
         </div>
@@ -230,41 +261,29 @@
       class="thumb-services-area default-padding carousel-shadow relative bg-cover"
     >
       <div class="container">
-        <div class="services-items">
-          <div class="services__content">
-            <div class="services__list">
-           <h3>FLEET SERVICES</h3>
-            <li>Complete PM Services</li>
-            <li>Hydraulic Systems</li>
-            <li>Pumps</li>
-            <li>Coolant Systems</li>
-            <li>Engine Repairs</li>
-            <li>Steering</li>
-            <li>Alternators</li>
-            <li>Belts & Hoses</li>
-            <li>Trailer Repairs</li>
-            <li>Diagnostics</li>
-          </div>
+        <h1 class="gallary__title">Gallary</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/img/gallery/1.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/background/services.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/background/main.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/background/services.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+             <img src="./assets/img/background/services.jpeg" alt="">
+            </div>
 
-          <div class="services__list">
-            <h3>REPAIRS ALL MAKES & MODELS</h3>
-             <li>Suspension</li>
-             <li>Electrical Repairs</li>
-             <li>Starters</li>
-             <li>Exhaust Systems</li>
-             <li>Tires Change</li>
-             <li>Battery Boosts</li>
-             <li>Air Lines</li>
-             <li>Hoses and Cooling System</li>
-             <li>Side Panel</li>
-             <li>Hitch & Axle Replacements</li>
-             <li>Kenworth</li>
-             <li>International</li>
-             <li>Freightliner</li>
-           </div>
           </div>
-          
-
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -373,6 +392,9 @@
       <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- jQuery Frameworks
     ============================================= -->
