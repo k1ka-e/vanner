@@ -7753,3 +7753,38 @@ footer.bg-dark .footer-bottom a {
   background: url(assets/img/1493.gif) center no-repeat #ffffff;
   text-align: center;
 }
+
+
+@media (max-width: 991px) {
+  .item-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services__content {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 780px) {
+.pod_navbar {
+  display: none;
+}
+
+.services__list {
+  margin-top: 2rem;
+}
+
+.services__list h3 {
+  font-size: 20px;
+}
+}
+
+
+@media (max-width: 490px) {
+  .item-grid {
+    grid-template-columns: 1fr;
+  }
+  }
