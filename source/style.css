@@ -3401,7 +3401,7 @@ body,
 /* ============================================================== 
      # Features 
 =================================================================== */
-
+/* 
 .features-area.bottom-shape::after {
   position: absolute;
   left: 0;
@@ -3431,7 +3431,7 @@ body,
   right: 0;
   top: 0;
   opacity: 0.5;
-}
+} */
 
 .features-area .single-item {
   margin-bottom: 30px;
@@ -3439,6 +3439,7 @@ body,
 
 .features-area .item {
   padding: 50px 30px;
+  border-radius: 1px all var(--primary2);
   background: #ffffff;
   border-radius: 8px;
   position: relative;
@@ -3455,10 +3456,14 @@ body,
   z-index: 1;
 }
 
+.item__content {
+  position: relative;
+  top: -102px; 
+}
+
 
 .item-grid {
-  opacity: 1;
-  z-index: 1000;
+  position: relative;
   justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -3470,6 +3475,7 @@ body,
   text-align: center;
   justify-content: center;
   height: 100%;
+  z-index: -1;
 }
 
 .services__content {
@@ -3510,7 +3516,7 @@ body,
   transition: all 0.35s ease-in-out;
 }
 
-.features-area .item-grid .item:first-child {
+.features-area .item-grid .item {
   margin-top: 0;
 }
 
@@ -3518,24 +3524,19 @@ body,
   padding-left: 35px;
 }
 
-.features-area .item-grid:first-child .item:first-child,
-.features-area .item-grid:last-child .item:last-child,
 .features-area .item-grid .item:hover {
   background: linear-gradient(90deg, rgb(21, 47, 104) 0%, rgb(72, 86, 148) 100%);
+  color: #fff;
 }
 
-.features-area .item-grid:first-child .item:first-child i, 
-.features-area .item-grid:first-child .item:first-child a, 
-.features-area .item-grid:first-child .item:first-child p,
-.features-area .item-grid:last-child .item:last-child i, 
-.features-area .item-grid:last-child .item:last-child a, 
-.features-area .item-grid:last-child .item:last-child p,
+
+
 .features-area .item-grid .item:hover i, 
 .features-area .item-grid .item:hover a, 
 .features-area .item-grid .item:hover p {
   color: #ffffff;
   transition: all 0.35s ease-in-out;
-}
+} 
 
 /* Why us */
 .why-us > h5 {
