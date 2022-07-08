@@ -587,6 +587,10 @@ nav.navbar.bootsnav.bg-theme .logo.responsive {
   display: none;
 }
 
+nav.navbar.bootsnav ul.nav > li .active {
+  color: var(--primary);
+}
+
 nav.navbar.bootsnav ul.nav > li > a {
   color: #333333;
   background-color: transparent !important;
@@ -1635,7 +1639,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.nav > li.active > a {
-    color: #086AD8;
+    color: #b12727;
   }
 
   nav.navbar.bootsnav.color-yellow ul.nav > li.active > a {
