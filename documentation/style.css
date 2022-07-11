@@ -178,6 +178,16 @@ Version: 1.0
     text-transform: capitalize;
     
 }
+
+.header__title h2{
+  color: #fff;
+}
+
+.footer__list li{
+  cursor: pointer;
+}
+
+
 .heading h4 {
     font-weight: 600;
 }

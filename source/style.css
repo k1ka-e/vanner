@@ -2042,6 +2042,7 @@ body,
 
 .banner-area .content h2 {
   font-size: 60px;
+  color: #fff;
   margin-bottom: 25px;
 }
 
@@ -3441,13 +3442,19 @@ body,
 
 .features-area .item {
   padding: 50px 30px;
-  border-radius: 1px all var(--primary2);
-  background: #ffffff;
+  background: linear-gradient(90deg, rgb(21, 47, 104) 0%, rgb(72, 86, 148) 100%);
   border-radius: 8px;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
+
+.features-area .item-grid .item i, 
+.features-area .item-grid .item a, 
+.features-area .item-grid .item p {
+  color: #ffffff;
+  transition: all 0.35s ease-in-out;
+} 
 
 .features-area .item > i {
   display: inline-block;
@@ -3477,7 +3484,6 @@ body,
   text-align: center;
   justify-content: center;
   height: 100%;
-  z-index: -1;
 }
 
 .services__content {
@@ -3526,10 +3532,10 @@ body,
   padding-left: 35px;
 }
 
-.features-area .item-grid .item:hover {
+/* .features-area .item-grid .item:hover {
   background: linear-gradient(90deg, rgb(21, 47, 104) 0%, rgb(72, 86, 148) 100%);
   color: #fff;
-}
+} */
 
 
 
