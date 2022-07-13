@@ -1,0 +1,39 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+#php_flag error_reporting = E_ALL
+#php_flag display_errors = On
+#php_flag display_startup_errors = On
+ 
+RewriteEngine On
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+Options -Multiviews
+
+RewriteEngine On
+
+  #RewriteBase /
+  #RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  #RewriteRule . /index.php [L]
+
+RewriteRule ^([^/.]+)?$ /index.php?page=$1 [L]
+
+RewriteRule ^([^/.]+)/([^/.]+)?$ /index.php?lang=$1&page=$2 [L]
+#RewriteRule ^([^/.]+)/([^/.]+)/([^/.]+)?$ /index.php?lang=$1&page=$2&item_id=$3 [L]
+#RewriteRule ^([^/.]+)/([^/.]+)/message/([^/.]+)?$ /index.php?lang=$1&page=$2&send=$3 [L]
+
+#RewriteRule ^account/([^/.]+)/([^/.]+)?$ /account/index.php?page=$1&page_action=$2 [L]
+ 
+#RewriteRule ^profile/([^/.]+)/page/([^/.]+)?$ /user.php?user_id=$1&page=$2 [L]
+#RewriteRule ^account/([^/.]+)/([^/.]+)?$ /account/index.php?page=$1&page_action=$2 [L]
+#RewriteRule ^account/([^/.]+)/([^/.]+)/([^/.]+)?$ /account/index.php?page=$1&page_action=$2&item_id=$3 [L]
+#RewriteRule ^account/([^/.]+)/([^/.]+)/itemsperpage/([^/.]+)?$ /account/index.php?page=$1&page_action=$2&yozuv_soni=$3 [L]
+#RewriteRule ^account/([^/.]+)/([^/.]+)/([^/.]+)/([^/.]+)?$ /account/index.php?page=$1&page_action=$2&item_id=$3&firma_id=$4 [L]
+		
+#RewriteRule ^profile/([^/.]+)?$ /user.php?user_id=$1 [L]

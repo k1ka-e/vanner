@@ -1,0 +1,1 @@
+<?php if ($_GET['page']=='main'){require 'main_list.php';}?>

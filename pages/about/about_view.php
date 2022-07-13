@@ -1,0 +1,1 @@
+<?php if ($_GET['page']=='about'){require 'about_list.php';}?>

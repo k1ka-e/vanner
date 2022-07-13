@@ -1,0 +1,1 @@
+<?php if ($_GET['page']=='services'){require 'services_list.php';}?>
