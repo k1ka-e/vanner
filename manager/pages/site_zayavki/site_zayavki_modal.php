@@ -17,7 +17,7 @@ $fields = [
 [ 'name' => 'name','type' => 'text','sort' => '200' ],
 [ 'name' => 'email','type' => 'text','sort' => '300' ],
 [ 'name' => 'phone','type' => 'text','sort' => '400' ],
-[ 'name' => 'text','type' => 'textarea','sort' => '500' ]
+[ 'name' => 'comments','type' => 'textarea','sort' => '500' ]
 
 ]
 

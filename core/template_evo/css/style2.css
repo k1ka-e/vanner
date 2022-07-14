@@ -7897,3 +7897,40 @@ footer.bg-dark .footer-bottom a {
 .swiper-wrapper {
   height: auto;
 }
+
+.button__footer {
+  padding: 10px 25px;
+  background: transparent;
+  border-radius: 40px;
+  font-size: 16px;
+  border: 2px solid #fff;
+}
+
+.button__footer:hover a {
+  color: var(--primary2);
+}
+
+.button__footer:hover {
+  background: #fff;
+  border: 2px solid var(--primary2);
+}
+
+.f-item {
+padding-top: 3rem;
+}
+
+@media (max-width: 775px) {
+
+  .f-item {
+    text-align: center;
+  }
+
+  .features-area .item {
+    padding: 24px 30px;
+  }
+
+  .item__content {
+    top: -40px;
+  }
+  
+}

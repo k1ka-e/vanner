@@ -82,7 +82,7 @@
 												<td><?=$v['ID']?></td>
 											    <td><?=$v['NAME']?></td>
 											    <td><?=$v['EMAIL']?></td>
-											    <td><?=$v['TEXT']?></td>
+											    <td><?=$v['COMMENTS']?></td>
 												<td><?=$v['PHONE']?></td>
 											
 											   	

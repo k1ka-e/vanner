@@ -11,29 +11,27 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 item">
               <div class="f-item about">
-                <img src="<?php echo $template_path ?>img/remove-bg-logo.png" alt="Logo">
-                <form action="#">
-                  <input type="email" placeholder="Your Email" class="form-control" name="email">
-                  <button type="submit">
-                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <? foreach (view::CONTENT('all_active', ['IBLOCK_ID' => '178']) as $footer) : ?>
+
+                  <img src="<?= $footer['img'] ?>" alt="Logo">
+                  <button class="button__footer" name="contact_button" type="submit">
+                    <a href="<?= $footer['url'] ?>"><?= $footer['button'] ?></a>
                   </button>
-                </form>
               </div>
             </div>
             <div class="col-lg-2 col-md-6">
               <div class="f-item link">
-                <? foreach (view::CONTENT('all_active', ['IBLOCK_ID' => '178']) as $footer) : ?>
 
-                  <h4 class="widget-title"><?= $footer['title'] ?></h4>
+                <h4 class="widget-title"><?= $footer['title'] ?></h4>
+              <? endforeach ?>
+              <ul class="footer__list">
+
+                <? foreach (view::CONTENT('all_active', ['IBLOCK_ID' => '159']) as $menu) : ?>
+                  <li>
+                    <a href="<?= $menu['url'] ?>"><?= $menu['name'] ?></a>
+                  </li>
                 <? endforeach ?>
-                <ul class="footer__list">
-
-                  <? foreach (view::CONTENT('all_active', ['IBLOCK_ID' => '159']) as $menu) : ?>
-                    <li>
-                      <a href="<?= $menu['url'] ?>"><?= $menu['name'] ?></a>
-                    </li>
-                  <? endforeach ?>
-                </ul>
+              </ul>
               </div>
             </div>
             <div class="col-lg-2 col-md-6">

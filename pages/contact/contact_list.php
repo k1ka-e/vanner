@@ -30,7 +30,7 @@
                         <div class="heading">
                             <h2><?= $contact['title1'] ?></h2>
                         </div>
-                        <form  method="POST" class="contact-form">
+                        <form id="myform" method="POST" class="contact-form">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
@@ -64,7 +64,7 @@
                                     </button>
                                 </div>
                             </div>
-                            
+
                         </form>
                     </div>
                 </div>
@@ -139,9 +139,9 @@
 
 <?php
 
- echo '<pre>';
- print_r($_POST);
- echo '</pre>';
+//  echo '<pre>';
+//  print_r($_POST);
+//  echo '</pre>';
 
 
 
@@ -159,19 +159,15 @@ if (isset($_POST['contact_button'])) {
       '$_POST[name]', 
       '$_POST[email]', 
       '$_POST[phone]', 
-       '$_GET[comments]', 
+       '$_POST[comments]', 
        '1')");
 
-if ($request['ins']['stat']=='success'){
+    if ($request['ins']['stat'] == 'success') {
+        echo ("отправлено");
 
-    echo ("отправлено");
-	
-	LocalRedirect ('contact_list.php');
-	
+        LocalRedirect('contact');
+    }
 }
-}
-
-
 
 
 
@@ -182,8 +178,15 @@ if ($request['ins']['stat']=='success'){
 
         $("form").submit(function(event) {
 
+
             //event.preventDefault();
-            alert("Ваша заявка отправлена");
+            alert("Your application has been sent");
+
+            // $('#submit')
+            //     .after('<img src="/core/template_evo//img/ajax-loader.gif" class="loader" />')
+            //     .attr('disabled', 'disabled');
+
+            //document.getElementById('myform').reset();
 
 
 
